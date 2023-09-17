@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Hotel</title>
+    <link rel="stylesheet" href="../css/reserva.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../sistema.html">Inicio</a></li>
+                <li><a href="../sistema.html#servicios">otros servicios</a></li>
+                <li><a href="../sistema.html#contactenos">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Reserva de Hotel</h1>
+    <form id="hotelReservaForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" class="inputp" name="nombre" required>
+
+        <label for="fechaLlegada">Fecha de llegada:</label>
+        <input type="date" id="fechaLlegada" class="inputp" name="fechaLlegada" required>
+
+        <label for="fechaSalida">Fecha de salida:</label>
+        <input type="date" id="fechaSalida" class="inputp" name="fechaSalida" required>
+
+        <label for="habitacion">Tipo de habitación:</label>
+        <select id="habitacion" name="habitacion">
+            <option value="individual">Individual</option>
+            <option value="doble">Doble</option>
+            <option value="suite">Suite</option>
+        </select>
+
+        <button type="submit">Reservar</button>
+    </form>
+
+    <script src="../js/reserva.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+<footer>
+    <p>Hotel CIDE</p>
+</footer>
+</html>
