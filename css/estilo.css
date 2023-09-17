@@ -35,12 +35,12 @@ h1,h2{
 }
 
 h3{
-    font-size:25px;
+    font-size:22px;
     color:rgb(1, 187, 42);
-    line-height: 80px;
+    line-height: 25px;
 }
 p{
-    padding-bottom: 28px 0;
+    padding-bottom: 8px;
 }
 /*menu*/
 
@@ -126,6 +126,12 @@ nav{
     font-family: 'Victor Mono', monospace;
     
 }
+.Articulo h1,h2{
+    color: rgb(1, 187, 42);
+}
+.Articulo h1{
+    margin-top: -25px;
+}
 .Articulo p{
     text-align: justify;
 }
@@ -146,19 +152,27 @@ section img{
 /*contenido*/
 
 .contenido{
-    display: table;    
+    display: table;  
+    margin-top: 25px;  
 }
 /*renderizar estado a columnas*/
 .Entidad{
     display: table-cell;
-    padding-right: 25px;
-    width: 850px;
+    
 }
 /*se fija el contenido a columnas*/
 .Articulo{
     column-count: 2;
-    column-gap:10px
-
+    column-gap: 10px;
+}
+.Articulo li{
+    width: 150px;
+}
+section a{
+    color: rgb(1, 187, 42);    
+}
+section a:hover{
+    color: rgb(0, 90, 20);
 }
 
 #comentarios{
@@ -194,34 +208,41 @@ section img{
 }
 .comen a{
     text-decoration: none;
+    color: rgb(1, 187, 42);
 }
+form h2{
+    font-size: 25px;
+    text-align: center;
+}
+
 
 footer{
     background-color: rgb(1, 187, 42);
     position: absolute;
+    margin-top: 50px;
     z-index: 2;
     left: 0;
     width: 100%;
-    padding-bottom: 10px;
+    padding-top: 20px;
     font-size: 25px;
     padding-left: 50px;
     
 }
 .Entidad section p{
     width: 210px;
-    
 }
 .pie p{
     width: 380px;
 }
 .pie{
     align-content: center;
+    padding-top: 20px;
 }
 .pie section{
     display: table-cell;
     width: 200px;
     position: relative;
-    
+    padding-right: 100px;
 }
 .pie section a{
     color: rgb(129, 247, 114);
@@ -248,12 +269,10 @@ form{
 }
 .boton1{
     padding: 10px;
-    margin-left: 15px;
     box-shadow: 1px 1px 15px rgba(20, 20, 20, 0.5);
 }
 .boton2{
     padding: 10px;
-    margin-left: 25px;
     box-shadow: 1px 1px 15px rgba(20, 20, 20, 0.5);
 }
 .boton3{
@@ -275,8 +294,321 @@ aside i{
     padding: 50px;
 }
 
+
 @media screen and (max-width: 767px) {
-    /* Estilos para dispositivos móviles */
+    
+    
+    .logo{
+        width: 110px;
+        height: 110px;
+        float:left;
+        margin-top: -10px;
+        padding-top: 25px;
+    }    
+    .logo:hover {
+        transform: scale(1.0);
+    }
+           
+    body{
+        background-color: rgb(238, 246, 252);
+        margin: 0 auto;
+        padding: 22px 0;
+        width: 600px;
+    }
+    
+    .titulo{
+        margin-left: 50px;
+        padding-top: 60px;
+    }
+    
+    h1,h2{
+        line-height: 20px;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+    
+    h3{
+        font-size:20px;
+        color:rgb(1, 187, 42);
+        line-height: 25px;
+    }
+    
+    /*menu*/
+    
+    nav{
+        background-color: rgb(1, 187, 42);
+        margin-top: 35px;
+        position: absolute;
+        z-index: 2;
+        width: 600px;
+        padding-bottom: 2px;
+        left: 0;
+    }
+    
+    .navegador{
+        height: 68px;
+        align-content: center;   
+    }
+    .navegador .menu ul li a{
+        color:rgb(0, 70, 15);
+        width: 199px;
+    }
+    
+    .navegador .menu a{
+        text-decoration: none;
+    }
+    .menu li{
+        position: relative;
+    }
+    .menu{
+        list-style: none;
+        display: flex;
+        font-size: 22px;
+    }
+    .menu li a{
+        display: block;
+        padding:10px 20px;
+        padding-bottom: 20px;
+    }
+    .menu li:hover{
+        background-color: rgb(151, 218, 165);
+        padding: 5px;
+    }
+    
+    
+    /*submenu*/
+    .submenu{
+        display: none;
+        background-color: rgb(1, 187, 42);
+        position:absolute;
+        width: 239px;
+        list-style: none;
+        align-content: center;
+        margin-left: -5px;
+    }
+    .submenu li a{
+        text-align: center;
+    }
+    
+    .menu li:hover .submenu{
+        display:block;
+    }
+    
+    .banner_estatico{
+        position: relative;
+        display: flex;
+        margin-top: 105px;
+        padding: 25px;
+        font-size: 20px;
+        color: rgb(4, 37, 0);
+        border: solid 1px rgb(1, 187, 42);
+        box-shadow: 1px 15px 40px rgba(20, 20, 20, 0.5);
+        background-image: url(../img/fondo.jpg);
+        background-size: 1000px 245px;
+    }
+    
+    .banner_estatico h2 {
+        display: flex;
+        padding:  35px 0 0 8px;
+        color: rgb(1, 187, 42);
+        font-size: 40px;
+        line-height: 35px;
+        text-align: center;
+        font-family: 'Victor Mono', monospace;
+        
+    }
+    .Articulo h1,h2{
+        color: rgb(1, 187, 42);
+        
+    }
+    .Articulo h1{
+        margin-top: -15px;
+        margin-left: 10px;
+    }
+    .Articulo h2{
+        margin-left: 10px;
+    }
+    
+    .Articulo header p,.Articulo header p a{
+        font-size: 50px;
+        color: rgb(226, 43, 171);
+    }
+    .Articulo header p a:hover{
+        text-decoration: none;
+    }
+    section img{
+        margin: 25px 0;
+        box-shadow: 1px 15px 15px rgba(20, 20, 20, 0.5);
+        width: 180px;
+        height: 150px;
+        margin-left: 12px;
+    }
+    section h3{
+        margin-left: 15px;
+    }
+        
+    /*contenido*/
+    
+    .contenido{
+        display: table;  
+        margin-top: 25px;  
+    }
+    /*renderizar estado a columnas*/
+    .Entidad{
+        display: table-cell;
+        width: 180px;
+    }
+    /*se fija el contenido a columnas*/
+    .Articulo{
+        column-count: 2;
+        column-gap:15px;
+        margin-right: 200px;
+    }
+    .Articulo li{
+        width: 150px;
+        margin-left: 12px;
+    }
+    section a{
+        color: rgb(1, 187, 42); 
+        margin-left: 10px;   
+    }
+    section a:hover{
+        color: rgb(0, 90, 20);
+    }
+    
+    #comentarios{
+        box-shadow: 1px 8px 8px 1px;
+        margin-top: 50px;
+    }
+    #comentarios article{
+        display:table;
+        padding:22px;
+    }
+    #comentarios h2{
+        font-size: 25px;
+        padding: 10px 0 10px 0;
+    }
+    #comentarios h3{
+        color:rgb(1, 187, 42);
+    }
+    #comentarios article div{
+        display: table-cell;
+        width: 90px;
+    }
+    
+    #comentarios article:nth-child(odd){
+        padding: 24px;
+        background-color: #7eeb4b;
+        width:91%;
+        margin-left: 2px;
+    }
+    .comen{
+        font-style: italic;
+        padding-bottom: 20px;
+    }
+    .comen a{
+        text-decoration: none;
+        color: rgb(1, 187, 42);
+    }
+    form h2{
+        font-size: 25px;
+        text-align: center;
+    }
+        
+    footer{
+        background-color: rgb(1, 187, 42);
+        position: absolute;
+        margin-top: 50px;
+        z-index: 2;
+        left: 0;
+        width: 605px;
+        padding-top: 20px;
+        font-size: 25px;
+        padding-left: 10px;
+    }
+    .Entidad section p{
+        width: 180px;
+        margin-left: 10px;
+    }
+    .pie a{
+        margin-left: 1px;
+    }
+    .pie section li{
+        margin-left: -15px;
+        font-size: 20px;
+    }
+    
+    .pie p{
+        width: 80px;
+        font-size: 20px;
+    }
+    .pie h3{
+        margin-left: 1px;
+        font-size: 20px;
+    }
+    .pie{
+        align-content: center;
+        padding-top: 0px;
+    }
+    .pie section{
+        display: table-cell;
+        width: 10px;
+        position: relative;
+    }
+    .pie section a{
+        color: rgb(129, 247, 114);
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .pie section h3{
+        color: rgb(0, 105, 0);
+    }
+    .pie section a:hover{
+        color: rgb(6, 53, 0);
+    }
+    
+    .pie ul{
+        list-style:circle ;
+    }
+    
+    .pie ul li a{
+        display: block;
+    }
+    
+    form{
+        color: rgb(1, 187, 42);
+        font-size: 20px;
+    }
+    .boton1{
+        padding: 10px;
+        box-shadow: 1px 1px 15px rgba(20, 20, 20, 0.5);
+    }
+    .boton2{
+        padding: 10px;
+        box-shadow: 1px 1px 15px rgba(20, 20, 20, 0.5);
+    }
+    .boton3{
+        padding: 14px;
+        width: 550px;
+        height: 80px;
+        box-shadow: 1px 1px 15px rgba(20, 20, 20, 0.5);
+    }
+    .Enviar{
+        padding: 10px;
+        background-color: rgb(1, 187, 42);
+        box-shadow: 1px 1px 15px rgba(20, 20, 20, 0.5);
+    }
+    aside a{
+        text-decoration: none;
+        font-size: 12px;
+    }
+    aside i{
+        width: 20px;
+        padding: 50px;
+    }
+    aside {
+        margin-left: -190px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
