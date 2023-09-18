@@ -1,0 +1,155 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4e4d4d;
+}
+
+.header-contenido {
+    background-color: #0078d4;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    padding: 150px;
+    background-image: url(../img/spal.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+    
+   
+    
+    
+    
+   
+}
+
+.header-contenido h1 {
+    animation: 3s aparecer forwards;
+}
+.header-contenido p{
+    animation: 3s aparecer forwards;
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        top: 50px;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.servicio {
+    background-color: rgb(127, 129, 127);
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #2a717a;
+}
+
+.servicio img {
+    max-width: 100%;
+    width: 45%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 5px rgb(5, 5, 5);
+}
+
+.servicio-contenido {
+    text-align: center;
+}
+
+h2 {
+    font-size: 38px;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 25px;
+}
+
+
+/* estilo menu */
+/* Estilos para el menú */
+nav {
+    background-color: #2a717a;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    box-shadow: 4px 4px 4px 1px rgb(15, 15, 15);
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(11, 11, 11);
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+a:hover{
+    color: rgb(238, 239, 239);
+
+}
+
+/* Estilos para el menú responsivo */
+@media screen and (max-width: 768px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+}
+
+/* estilo footer */
+
+footer {
+    background-color: #080808;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .servicio {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+ 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .slider {
     width: 95%;
     margin: auto;
@@ -300,3 +301,105 @@ h1{
     font-size: 18px;
 }
 
+=======
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(../img/fondoformreserva.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+h1 {
+    color: #fcfafa;
+}
+
+form {
+    background-color: #3f3f3f;
+    width: 30%;
+    margin: 0 auto;
+    padding: 45px;
+    border-radius: 6px;
+    box-shadow: 10px 10px 10px 9px black;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    background: #ccc;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+
+button {
+    background-color: #007bff;
+    margin-top: 20px;
+    width: 90%;
+    height: 40px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.inputp:valid {
+    border-color: rgb(35, 248, 3);
+}
+.inputp:invalid {
+    border-color: rgb(252, 4, 4);
+}
+footer {
+    background-color: #222222;
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+>>>>>>> 94aa8076fd41e8b9b69d888b8b41d7e0d8fa70fe
