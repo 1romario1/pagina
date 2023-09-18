@@ -1,0 +1,509 @@
+/* Estilos globales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* Estilo de scroll suave en la página */
+html{
+    scroll-behavior: smooth;
+}
+/* Estilos del cuerpo de la página */
+body{
+    display: flex;
+    overflow: hidden;
+}
+/* Estilos de los bloques de contenido */
+.bloque{
+    width: 100vw;
+    padding-top: 50px;
+    flex-shrink: 0;
+    height: 100vh;
+}
+/* Estilos del encabezado (header) */
+header{
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
+    width: 100%;
+    background: #1f0f27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #04880f, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+
+
+}
+/* Estilos de los enlaces de navegación en el encabezado */
+header nav a {
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: bisque;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+/* Estilos de los enlaces en hover */
+a:hover{
+    color: #04b1cf;
+}
+
+head a{
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: bisque;
+    padding: 10px;
+    font-size: 24px;
+
+}
+/* Estilos para el ícono del menú */
+header span{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 40px;
+    border: 2px solid rgb(6, 6, 6);
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.icono-menu img{
+    width: 40px;
+    height: 40px;
+}
+/* Estilo para el enlace seleccionado */
+.selected{
+    color: aquamarine;
+    transition: .3s;
+}
+
+/* Estilos para la sección de introducción (intro) */
+#intro{
+    background-image: url(../img/th.jfif);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro .contenido h1{
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(1, 187, 42);
+    text-shadow: 3px 3px 10px gray;
+    position: relative;
+    animation: 3s aparecer forwards;
+    padding-bottom: 80px;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        top: 50px;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+/* Estilos para el formulario en la sección de introducción */
+#intro .formulario {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    background: rgb(1, 187, 42);
+    box-shadow: 10px 10px 20px rgb(16, 16, 16);
+}
+.formulario h2{
+    padding: 18px;
+}
+.formulario h3 {
+    color: #070707;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+/* Estilos para los campos del formulario */
+.formulario .info {
+    margin-bottom: 20px;
+}
+.info label {
+    display: block;
+    color: #0a0a0a;
+    font-weight: bold;
+}
+
+.info input {
+    display: block;
+    width: 95%;
+    border: none;
+    border-bottom: 1px solid #4d4343;
+    padding: 5px;
+    outline: none;
+    border-radius: 3px;
+    background-color: rgb(238, 246, 252);
+}
+
+/* Estilos para el botón de enviar en el formulario */
+.formulario .btn_enviar {
+    background-color: rgb(0, 70, 15);
+    border-radius: 5px;
+    margin-left: 35%;
+    display: block;
+    border: none;
+    color: #090909;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Estilos para la sección de servicios (servicios) */
+#servicios {
+     background: linear-gradient(transparent, rgb(202, 206, 202)), url(../img/fondoservicios.jpg);
+    background-size: cover; 
+}
+
+#servicios h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Estilos para los elementos de servicios*/
+#servicios .contenido {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#servicios .servicio1 {
+    background-image: url(../img/piscina.jpg);
+}
+
+#servicios .servicio2 {
+    background-image: url(../img/restaurante.jfif);
+}
+
+#servicios  .servicio3 {
+    background-image: url(../img/bar.jfif);
+}
+
+#servicios .servicio4 {
+    background-image: url(../img/spa.jfif);
+}
+
+#servicios  .servicio5 {
+    background-image: url(../img/servicioc.jfif);
+}
+
+/* Estilos para el acordeón en servicios */
+#servicios .item {
+    width: 25%; 
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 10px;
+    transition: .7s;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#servicios .item:hover {
+   width: 90%;
+}
+
+#servicios  .overlay {
+   position: absolute;
+   background: linear-gradient(to bottom, transparent 80%, black);
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+#servicios .item .titulo {
+   position: absolute;
+   bottom: -10px;
+   letter-spacing: 2px;
+   left: 50%;
+   transform: translateX(-50%);
+   color: #e7e7dd;
+   font-style: 20px;
+   background-color: black;
+   padding: 10px 0;
+   width: 100%;
+   opacity: 0;
+   transition: .3s;
+}
+
+#servicios .item:hover .titulo {
+   bottom: -20px;
+   opacity: 1;
+}
+
+/* Estilos para la sección de reservas (reservas) */
+#reservas {
+    background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(6, 6, 6, 0.7)), url('../img/fondoreserva.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(106, 105, 105);
+    padding: 50px 0;
+}
+#reservas .contenido {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-image: url(../img/reservasfondo.jpg);
+    background-size: cover;
+    background-color: rgba(216, 203, 203, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Estilos para los párrafos en la sección de reservas */
+#reservas h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2f15f8; 
+}
+
+#reservas p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2F4F4F;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* Estilos para los elementos en la sección de reservas */
+#reservas .item {
+    margin-top: 20px;
+}
+
+#reservas .item h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #2f15f8; 
+    margin-bottom: 10px;
+}
+
+#reservas .item a {
+    color: #7ee3f9; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#reservas .item a:hover {
+    color: #ffffff;
+}
+#reservas a {
+    color: #7ee3f9; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#reservas .item:hover {
+    box-shadow: 0 4px 8px rgba(16, 16, 16, 0.2); 
+    transform: translateY(-5px); 
+}
+
+/* Estilos para la sección de contacto (contactenos) */
+#contactenos {
+    background-color: #090909; 
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contactenos .contenido {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+/* Estilos para la información de contacto */
+#contactenos .datos {
+    flex: 1; 
+    padding: 20px;
+    text-align: left;
+}
+
+#contactenos .datos .item {
+    margin-bottom: 20px;
+}
+
+#contactenos .icono a {
+    font-size: 16px;
+    color: #4efcc5; 
+}
+#contactenos .icono  {
+    font-size: 16px;
+    color: #4efcc5; 
+}
+
+#contactenos .datos h2 {
+    font-size: 24px;
+    color: #f6f2f2;
+    margin-top: 10px;
+}
+
+#contactenos .datos h3 {
+    font-size: 18px;
+    color: #74f8ad; 
+}
+
+/* Estilos para el formulario de contacto */
+#contactenos .formulario {
+    flex: 1; 
+    padding: 15px;
+    width: 0px;
+    height: 130%;
+    text-align: left;
+    
+   
+    background-image: url(../img/formucontac.jpg);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(254, 255, 254); 
+}
+
+#contactenos .formulario h2 {
+    font-size: 24px;
+    color: #080707;
+    margin-bottom: 20px;
+}
+/* Estilos para los campos del formulario de contacto */
+#contactenos .info label {
+    display: block;
+    font-weight: bold;
+    color: #555; 
+    margin-top: 10px;
+}
+
+#contactenos .info input,
+#contactenos .info textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 7px;
+}
+
+#contactenos .info input::placeholder,
+#contactenos .info textarea::placeholder {
+    color: #999; 
+}
+
+#contactenos .info input:focus,
+#contactenos .info textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+/* Estilos para el botón de enviar en el formulario de contacto */
+#contactenos .btn_enviar {
+    background-color: #0ba5ff; 
+    border: none;
+    border-radius: 5px;
+    color: #fff; 
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactenos .btn_enviar:hover {
+    background-color: #4bf5a0; 
+}
+#contactenos .inputp:valid {
+    border-color: rgb(38, 95, 252);
+}
+#contactenos .inputp:invalid {
+    border-color: rgb(252, 4, 4);
+}
+
+.formulario {
+    text-align: center;
+}
+.info {
+    margin: 10px 0;
+}
+.error-message {
+    color: red;
+}
+
+/* Estilos para el formulario de registro */
+#registro {
+    text-align: center;
+    padding: 20px;
+    background-color: #4fefdf;
+}
+  
+.formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #444242;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+  
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+  
+.info {
+    margin-bottom: 20px;
+}
+/* Estilos para las etiquetas en el formulario de registro */
+label {
+    display: block;
+    font-weight: bold;
+}
+/* Estilos para los campos de texto, email y select en el formulario de registro */
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+  
+  
+
+/* Estilos para el campo de entrada de texto válido en el formulario de registro */
+.inputp:valid {
+    border-color: rgb(38, 95, 252);
+}
+.inputp:invalid {
+    border-color: rgb(252, 4, 4);
+}
+
+
+
+  
+ /* Estilos para el botón de enviar en el formulario de registro */ 
+.btn_enviar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+.btn_enviar:hover {
+    background-color: rgb(119, 250, 148);
+}
+.bloque h2{
+    color: #04880f;
+}
+  

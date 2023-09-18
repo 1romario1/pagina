@@ -3,10 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Cargar hoja de estilos de FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Cargar archivo de estilos -->
+    <link rel="stylesheet" href="./css/estilosistema.css">
+    <!-- Agregar icono de la pestaña del navegador -->
+    <link rel="icon" href="../img/logo verde.png">
+    <!-- Cargar hoja de estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-7FfsF7xczj9RvF5t7n5z4e5z4k+OGpamoFVy38MVBnE+IbbVY+Xn5j4p+5C5CS56" crossorigin="anonymous">
+     <!-- Cargar script de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js" integrity="sha384-w02sxFnxEjhXpOoA6Ow5w5o9OYwJN47jPx3kO5KXAZVn6pb/R5Fte2zo/5GjS5" crossorigin="anonymous"></script>
+
+    <title>HOTEL</title>
 </head>
 <body>
-    <iframe src="/hotel/banner.html" frameborder="0" class="dinamico"></iframe>
+    <!-- <iframe src="./banner.html" frameborder="0"></iframe> -->
+    <header>
+        <nav>
+            <!-- Enlaces de navegación -->
+            <a href="../index.html" onclick="seleccionar(this)">Blog</a>
+            <a href="#intro" onclick="seleccionar(this)" class="selected">Inicio</a>
+            <a href="#servicios" onclick="seleccionar(this)">servicios</a>
+            <!-- Icono del menú -->
+            <span><i class="icono-menu"><img src="../img/logo verde.png" alt=""></i></span>
+            <a href="reservas/reservas.html" onclick="seleccionar(this)">reservas</a>
+            <a href="#contactenos" onclick="seleccionar(this)">contactenos</a>
+            <a href="#registro" onclick="seleccionar(this)">registro</a>
+        </nav>
+    </header>
+
+    <!-- Sección de inicio -->
+    <section id="intro" class="bloque">
+        <div class="contenido">
+            <!-- Título principal -->
+            <div>
+                <h1>BIENVENIDO</h1>
+            </div>
+
+            <!-- Formulario de inicio de sesión -->
+            <div class="formulario">
+                <form action="#servicios" id="inicio-sesion-form">
+                    <h2>Iniciar Sesión</h2>
+                    <div class="info">
+                        <label>Usuario</label>
+                        <input type="text" name="usuario" class="inputp" required>
+                    </div>
+                    <div class="info">
+                        <label>Contraseña</label>
+                        <input type="password" name="contrasena" class="inputp" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="ENVIAR" class="btn_enviar">
+                    </div>
+                </form>
+            </div>
+
+    </section>
     
+
+    <!-- Sección de servicios -->
+
+    <section id="servicios" class="bloque">
+        <div>
+            <!-- Título de servicios -->
+            <h2>NUESTROS SERVICIOS</h2>
+        </div>
+
+        <div class="contenido">
+
+            <!-- Servicios individuales con enlaces -->
+            <div class="item servicio1">
+                <a href="./servicios/picina.html" class="servicio1">
+                    <div class="overlay">
+                        <h2>picina</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item servicio2">
+                <a href="./servicios/restaurante.html" class="servicio2">
+                    <div class="overlay">
+                        <h2>restaurante</h2>
+                    </div>             
+                </a>
+            </div>
+
+            <div class="item servicio3">
+                <a href="./servicios/bar.html" class="servicio3">
+                    <div class="overlay">
+                        <h2>bar</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item servicio4">
+                <a href="../hotel/servicios/spa.html" class="servicio4">
+                    <div class="overlay">
+                        <h2>spa</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="item servicio5">
+                <a href="#" class="servicio5">
+                    <div class="overlay">
+                        <h2>room service</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- seccion contactenos -->
+
+    <section id="contactenos" class="bloque">
+        <div class="contenido">
+            <div class="datos">
+                <!-- Información de contacto -->
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="datos__dir">
+                        <h2>Direccion</h2>
+                        <h3>calle 13 # 10 - 93, Soacha, Cundinamarca</h3>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="datos__tel">
+                        <h2>Telefono</h2>
+                        <h3>5461500</h3>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="icono">
+                       <a href="#"> <i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <div class="datos__email">
+                        <h2>Correo</h2>
+                        <h3>judicialcundinamarca@sena.edu.co</h3>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="icono">
+                       <a href="https://www.whatsapp.com/?lang=es"> <i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <div class="datos__whass">
+                        <h2>whatsapp</h2>
+                        <h3>3168760255</h3>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Formulario de contacto -->
+            <div class="formulario">
+                <form action="#servicios" id="miFormulario">
+                    <h2>info contacto</h2>
+                    <div class="info">
+                        <label >Nombre</label>
+                        <input type="text" id="nombre" class="inputp" required>
+                    </div>
+                    <div class="info">
+                        <label >Apellido</label>
+                        <input type="text" id="apellido" class="inputp" required>
+                    </div>
+
+                    <div class="info">
+                        <label >Correo</label>
+                        <input type="email" id="email" class="inputp"  required>
+                    </div>
+
+                    <div class="info">
+                        <label >Asunto</label>
+                        <textarea  cols="30" rows="10" id="asunto" class="inputp" required></textarea >
+                    </div>
+
+                    <div >
+                        <input type="submit" value="ENVIAR" class="btn_enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion registro -->
+
+     <section id="registro" class="bloque">
+        <div class="formulario">
+            <form action="#servicios" id="form">
+                <h2>registro </h2>
+                <div class="info">
+                    <label >Nombre</label>
+                    <input type="text" name="nombre" class="inputp" required>
+                </div>
+                <div class="info">
+                    <label >Apellido</label>
+                    <input type="text" name="apellido" class="inputp" required>
+                </div>
+
+                <div class="info">
+                    <label >Correo</label>
+                    <input type="email" name="email" class="inputp" required>
+                </div>
+
+                <div class="info">
+                    <label >tipo documento</label>
+                    <select name="tipoDocumento">
+                        <option >cedula ciudadania</option>
+                        <option >cedula estranjera</option>
+                        <option >pasaporte</option>
+                    </select>
+                </div>
+
+                <div class="info">
+                    <label >he leido y acepto las condiciones</label>
+                    <input type="checkbox" name="condiciones" class="inputp" required>
+                </div>
+
+                <div >
+                    <input type="submit" value="ENVIAR" class="btn_enviar">
+                </div>
+            </form>
+        </div>
+    </section> 
+    
+      
+
+<!-- Scripts JavaScript -->
+    <script src="./js/sistema.js"></script>
+    <script src="./js/validacionregistro.js"></script> 
+    <script src="./js/validacioncontac.js"></script> 
+    <script src="./js/validariniciosecion.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    
+
+    
+      
+      
 </body>
 </html>
