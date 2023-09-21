@@ -294,7 +294,10 @@ aside i{
     padding: 50px;
 }
 
+
 /*sirve para acomodar de mejor manera como queremos que se vea en pantallas moviles*/
+
+
 @media screen and (max-width: 767px) {
     
     
@@ -611,7 +614,9 @@ aside i{
         margin-left: -190px;
     }
 }
+
 /*para una mejor visualizacion en las tabled*/
+
 @media screen and (min-width: 768px) and (max-width: 940px) {
     nav{
         background-color: rgb(1, 187, 42);
