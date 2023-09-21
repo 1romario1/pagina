@@ -294,7 +294,11 @@ aside i{
     padding: 50px;
 }
 
+<<<<<<< HEAD
 /*sirve para acomodar de mejor manera como queremos que se vea en pantallas moviles*/
+=======
+
+>>>>>>> 292f0b130e090ea4b450d5bcc3744de06d4dfdc9
 @media screen and (max-width: 767px) {
     
     
@@ -611,7 +615,11 @@ aside i{
         margin-left: -190px;
     }
 }
+<<<<<<< HEAD
 /*para una mejor visualizacion en las tabled*/
+=======
+
+>>>>>>> 292f0b130e090ea4b450d5bcc3744de06d4dfdc9
 @media screen and (min-width: 768px) and (max-width: 940px) {
     nav{
         background-color: rgb(1, 187, 42);
