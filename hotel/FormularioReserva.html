@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formularioReserva.css">
+    <title>Reservar</title>
+    <link rel="icon" href="/img/logo verde.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../hotel/sistema.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Reservacion</h1>
+    <div class="contenedor">
+        <form id="Formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="Fecha">FechaEntrada:</label>
+            <input type="date" id="Fecha" name="Fecha" required>
+            <br>
+            <label for="FechaSa">FechaSalida:</label>
+            <input type="date" id="FechaSa" name="FechaSa">
+            <label for="TipoHabitacion">TipoHabitacion:</label>
+            <select id="TipoHabitacion" name="TipoHabitacion">
+                <option value="Individual">Individual</option>
+                <option value="Doble">Doble</option>
+                <option value="Suite">Suite</option>
+                <option value="Matrimonial">Matrimonial</option>
+            </select>
+            <input type="submit" value="Reservar ¡ahora!">
+        </form>
+
+        <div id="mensaje">Has reservado con exito</div>
+    </div>
+
+    <script>
+        const formulario = document.getElementById('Formulario');
+        const mensaje = document.getElementById('mensaje');
+
+        formulario.addEventListener('submit', function (e) {
+            e.preventDefault();
+            mensaje.style.display = 'block';
+            setTimeout(function () {
+                mensaje.style.display = 'none';
+            }, 3000);
+        });
+    </script>
+
+</body>
+</html>

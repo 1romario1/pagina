@@ -4,6 +4,9 @@
     margin:auto;
     width: 80%;
 }
+body{
+    background-color: rgb(150, 247, 125);
+}
 
 .contenedor-banner{
     margin: auto;
@@ -16,7 +19,7 @@
 }
 
 .caja{
-    width: 705%;
+    width: 805%;
     height: 250px;
     display: flex;
 }

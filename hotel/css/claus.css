@@ -1,0 +1,23 @@
+h1{
+    color: rgb(6, 53, 0);
+    font-size: 50px;
+}
+ul{
+    color:rgb(0, 105, 0);
+    font-size: 25px;
+}
+body{
+    background-color: rgb(238, 246, 252);
+}
+header{
+    background-color: rgb(6, 53, 0);
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(1, 187, 42);
+}
+li{
+    list-style: none;
+}
