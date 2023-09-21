@@ -1,0 +1,11 @@
+*las carpetas css contienen hojas de estilo las cuales sirven para darle vida a nuestros archivos html
+,las carpetas img contiene imaganes para ilustrar mejor el sistema.
+*las clases sirven para poder darle estilo a un elemento en especifico como lo es tambien las id
+*Las secciones y div ayudan a mejorar la organizacion del programa y claramente tambien que los motores
+de busqueda sepan cual es el orden.
+*Las etiquetas img sirven para mostrar las imagenes que queremos mostrar en nuestro diseño.
+*Las etiquetas a sirven para realizar enlaces.
+*La etiqueta form sirve para brindarle un formulario al cliente, el cual llene con sus datos importantes.
+*Las etiquetas link sirven para utilizar en un acrhivo elementos de otro archivo.
+*La etiqueta video sirve para poner videos en nuestra estructura web.
+

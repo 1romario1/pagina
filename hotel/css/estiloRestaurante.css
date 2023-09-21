@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(238, 246, 252);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(1, 187, 42); 
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    color: rgb(0, 90, 20);
+}
+.slider {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    border:5px solid rgb(0, 90, 20);
+    background-color: rgb(0, 90, 20);
+    box-shadow: 1px 15px 40px rgba(20, 20, 20, 0.5);
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 200%;
+    animation:cambio 20s infinite;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 500px;
+    height: 110%;
+    padding: -1;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left:-100%;}
+}
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menu{
+    background-color: rgb(1, 187, 42);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.menu h2 {
+    color: rgb(0, 90, 20);
+    font-size: 24px;
+    margin: 0;
+}
+nav .one{
+    text-align: center;
+    background-color: rgb(0, 90, 20);;
+}
+
+.one ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.one li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.one a{
+    text-decoration: none;
+    color: rgb(11, 11, 11);
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+
+

@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 246, 252);
+}
+
+header {
+    background-color: rgb(0, 90, 20);
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    color: rgb(1, 187, 42);
+    margin: 0;
+    font-size: 36px;
+}
+header ul a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #7eeb4b;
+}
+.contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(238, 246, 252);
+    border-radius: 5px;
+    box-shadow: 1px 15px 15px rgba(20, 20, 20, 0.5);
+}
+
+.metodo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.metodo{
+    width: 45%; /* Controla el ancho de cada método de pago */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.metodo img {
+    max-width: 100%;
+    height: auto;
+}

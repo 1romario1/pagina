@@ -1,0 +1,31 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3e687a;
+    
+}
+
+header {
+    background-image: url('../img/headerrestaurante.jpg');
+    margin-bottom: -15px;
+    background-size: cover;
+    box-shadow: 5px 5px 5px 10px black;
+    color: #099ffd;
+    text-align: center;
+    padding: 100px 0;
+    background-attachment: fixed; 
+}
+
+header h1 {
+    font-size: 52px;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 28px;
+    opacity: 0.8;
+    
+}
